@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ws": "^8.8.0"
+  },
+  "scripts": {
+    "dev": "node server.js"
+  }
+}

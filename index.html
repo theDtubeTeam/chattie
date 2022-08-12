@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Live Chat Client</title>
+    <link rel="stylesheet" href="client.css"/>
+    <script src="client.js"></script>
+    <iframe style="width: 230px; height: 100%;" class="userbar" src="users.html"></iframe>
+  </head>
+  <body>
+  <div class="chatcontent">
+    <!-- (A) CHAT HISTORY -->
+    <div id="chatShow"></div>
+
+    <!-- (B) CHAT FORM -->
+    <form id="chatForm" onsubmit="return chat.send();">
+      <input id="chatMsg" type="text" required disabled/>
+      <input id="chatGo" type="submit" value="Go" disabled/>
+    </form>
+  </div>
+  </body>
+</html>
