@@ -17,7 +17,7 @@ var chat = {
     if (chat.name == null || chat.name=="") { chat.name = "Mysterious"; }
 
     // (A3) CONNECT TO CHAT SERVER
-    chat.socket = new WebSocket("ws://localhost:8080");
+    chat.socket = new WebSocket("ws://repeated-hill-amazonsaurus.glitch.me:80");
 
     // (A4) ON CONNECT - ANNOUNCE "I AM HERE" TO THE WORLD
     chat.socket.addEventListener("open", () => {
