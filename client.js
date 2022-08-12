@@ -66,8 +66,7 @@ var chat = {
     	    chat.ewrap.appendChild(row);
 	    return false;
 	}
-      console.log(msg.find("/colorme "));
-      if(msg.search("/colorme ") > 4096)
+      if(msg.search("/colorme ") > 1)
 	{
 	    chat.color = msg.replace("/colorme ", "");
     	    let row = document.createElement("div");
