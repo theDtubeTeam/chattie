@@ -12,7 +12,8 @@ function userAdd(msg) {
   }
 let socket = new WebSocket("wss://repeated-hill-amazonsaurus.glitch.me");
 // (A5) ON RECEIVE MESSAGE - DRAW IN HTML
-chat.socket.addEventListener("getUsers", (evt) => {
+socket.addEventListener("getUsers", (evt) => {
   userAdd(evt.data);
+  console.log(evt.data);
 });
   // (D) DRAW MESSAGE IN HTML
