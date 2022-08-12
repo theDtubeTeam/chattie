@@ -85,7 +85,7 @@ var chat = {
     // (D2) CREATE NEW ROW
     let row = document.createElement("div");
     row.className = "chatRow";
-    row.innerHTML = `<div class="chatName" style="background-color: #${msg["color"]};">${msg["name"]}</div> <div class="chatMsg">${msg["msg"]}</div>`;
+    row.innerHTML = `<div class="chatName" style="background-color: #${msg["color"]};">${msg["name"]}</div> <div class="chatMsg">${msg["msg"]}</div><audio autoplay><source src="btn.wav"/></audio>`;
     chat.ewrap.appendChild(row);
 
     // AUTO SCROLL TO BOTTOM MAY NOT BE THE BEST...
