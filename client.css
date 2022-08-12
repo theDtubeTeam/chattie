@@ -25,7 +25,7 @@ html, body {
 }
 .chatcontent
 {
-  margin-left: 230px;
+  //margin-left: 230px;
 }
 /* (C) CHAT FORM */
 .userbar {
@@ -35,7 +35,7 @@ html, body {
 #chatForm {
   display: flex;
   position: fixed;
-  margin-left: -230px;
+  //margin-left: -230px;
   bottom: 0;
   width: 100%;
   text-align: center;
