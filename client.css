@@ -35,12 +35,13 @@ html, body {
 #chatForm {
   display: flex;
   position: fixed;
-  margin-left: 0%;
+  margin-left: -230px;
   bottom: 0;
-  width: 83%;
+  width: 100%;
+  text-align: center;
   height: 50px;
   padding: 10px;
   background: #eee;
 }
-#chatMsg { width: 90%; }
-#chatGo { flex-grow: 1; }
+#chatMsg { width: 100%; }
+#chatGo { width: 30%; }
