@@ -66,6 +66,15 @@ var chat = {
     	    chat.ewrap.appendChild(row);
 	    return false;
 	}
+      if(msg.search("/colorme ") > 1)
+	{
+	    chat.color = msg.replace("/colorme ", "");
+    	    let row = document.createElement("div");
+    	    row.className = "chatRow";
+    	    row.innerHTML = `<div class="chatName" style="background-color: ${chat.color};">System</div> <div class="chatMsg">Your new color <font size="2">(Only you can see this message)</font></div>`;
+    	    chat.ewrap.appendChild(row);
+	    return false;
+	}
       chat.emsg.value = "";
     }
     chat.socket.send(JSON.stringify({
