@@ -4,7 +4,7 @@ chat.socket.addEventListener("getUsers", (evt) => {
   userAdd(evt.data);
 });
   // (D) DRAW MESSAGE IN HTML
-  userAdd(msg) {
+function userAdd(msg) {
     // (D1) PARSE JSON
     msg = JSON.parse(msg);
     console.log(msg);
